@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body 
+        {
+            background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg);
+            background-size: cover;
+            color: #fff;
+
+            height: 100vh;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1
+        {
+            font-size: 3.5em;
+        }
+
+        .countdown 
+        {
+            display: inline-block;
+            font-size: 1.7em;
+            padding: 1em;
+        }
+
+        .countdown span
+        {
+            display: block;
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countdown  to New Year 2024</h1>
+    <div>
+        <div class="countdown"><span id="days"></span>days</div>
+        <div class="countdown"><span id="hours"></span>hours</div>
+        <div class="countdown"><span id="minutes"></span>minutes</div>
+        <div class="countdown"><span id="seconds"></span>seconds</div>
+    </div>
+    <script src="./EP2Countdown Timer.js"></script>
+</body>
+</html>
