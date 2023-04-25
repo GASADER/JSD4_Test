@@ -3,7 +3,7 @@ const persons = [
     { name: "jane", age: 10},
     { name: "jim", age: 15}
 ];
-
+console.log(persons.length)
 // filter คัดออก
 // const kids = [];
 // for (let i = 0; i < persons.length; i++){
