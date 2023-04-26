@@ -10,7 +10,7 @@
 // 5.Store upload files
 
 //Javasrcipt = Browser
-//Node.js = Computer
+//Node.js = compile code js (Runtime = Complier, Translator) for run on Computer
 
 //npm = Node.js Custom
 
