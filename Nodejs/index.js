@@ -12,9 +12,14 @@
 //Javasrcipt = Browser
 //Node.js = compile code js (Runtime = Complier, Translator) for run on Computer
 
-//npm = Node.js Custom
+//npm = Node.js Custom (like a Game mod)
+
+//dependencies can remember npm on package.json
+//npm run script can modify command on package.json
 
 //Core module build-in module for node.js
+
+//test
 
 // const fs = require('fs')
 // const os = require('os')
@@ -25,6 +30,3 @@
 // console.log(os.totalmem())
 // console.log(os.arch())
 // console.log(data)
-
-//dependencies can remember npm on package.json
-//npm run script can modify command on package.json
