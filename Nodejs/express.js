@@ -77,9 +77,13 @@ const app = express()
 //import router from file
 const restaurantsRouter = require('./routers/test')
 
+const logger = require('./middleware/logger')
+
+app.use(logger)
 
 //use router with path
 app.use('/apis/restaurants',restaurantsRouter)
+
 
 app.get('/',(req,res)=>{
     res.send('<h1>Hello Express</h1>')
