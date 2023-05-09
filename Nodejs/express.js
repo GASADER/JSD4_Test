@@ -8,20 +8,6 @@
 // 3.Query Parameter
 // 4.Body
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import express from 'express'
 // // import { router } from './routers/newUser'
 // const app = express()
@@ -59,7 +45,7 @@
 // //     res.send(About)
 // //     res.status(404).end();
 // // })
-// //create server 
+// //create server
 
 // // app.use('/newuser',router)
 
@@ -71,26 +57,24 @@
 // })
 
 //import express
-const express = require ('express')
-const app = express()
+import express from "express";
+const app = express();
 
 //import router from file
-const restaurantsRouter = require('./routers/test')
+import restaurantsRouter from "./routers/test.js";
+import logger from "./middleware/logger.js";
 
-const logger = require('./middleware/logger')
-
-app.use(logger)
+app.use(logger);
 
 //use router with path
-app.use('/apis/restaurants',restaurantsRouter)
+app.use("/apis/restaurants", restaurantsRouter);
 
-
-app.get('/',(req,res)=>{
-    res.send('<h1>Hello Express</h1>')
-})
-
+app.get("/", (req, res) => {
+  res.send("<h1>Hello Express</h1>");
+});
 
 //Open server
-app.listen(4000,()=>{
-    console.log('Listening port 4000')
-})
+app.listen(4000, () => {
+  console.log("Listening port 4000");
+});
+

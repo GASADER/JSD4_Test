@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "intro to node",
   "main": "express.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon express.js",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,4 +1,4 @@
-const express = require('express')
+import express from "express";
 //import router from file express
 const router = express.Router()
 
@@ -31,4 +31,4 @@ router.delete('/:id',(req,res)=>{
 }) 
 
 //export router
-module.exports = router
+export default router
