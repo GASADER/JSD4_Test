@@ -1,4 +1,4 @@
-export const mock = [
+export const mocks = [
     {
         id: 1,
         profileName: "fsaasf",
@@ -9,5 +9,39 @@ export const mock = [
         date: "07/03/2030",
         title: "We Can Do It!",
         description: "View this so good.",
-      }
+        post_status:true
+      },
+      {
+        id: 2,
+        profileName: "สมหงิ งวย",
+        profileImage: "myImg",
+        imageUrl: null,
+        duration: { hr: 4, min: 23 },
+        distance: "4.6",
+        date: "07/03/2030",
+        title: "We Can Do It!",
+        description: "View this so good.",
+      },
+      {
+        id: 3,
+        profileName: "ทนงทวย คงควรคอย",
+        profileImage: "myImg",
+        imageUrl: null,
+        duration: { hr: 4, min: 23 },
+        distance: "4.6",
+        date: "07/03/2030",
+        title: "We Can Do It!",
+        description: "View this so good.",
+      },
+      {
+        id: 4,
+        profileName: "faaffs",
+        profileImage: "myImg",
+        imageUrl: null,
+        duration: { hr: 4, min: 23 },
+        distance: "4.6",
+        date: "07/03/2030",
+        title: "We Can Do It!",
+        description: "View this so good.",
+      },
 ]
