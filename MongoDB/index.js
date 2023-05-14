@@ -21,7 +21,7 @@ async function run(){
   await connectDb()
   routers(app)
 
-  app.listen(port, ipAddress, () => {
+  await app.listen(port, ipAddress, () => {
     console.log(`Web Application Server is running on ${ipAddress} port ${port}`);
     console.log(`Address: http://${ipAddress}:${port}`);
   });
