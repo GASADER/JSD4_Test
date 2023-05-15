@@ -24,9 +24,11 @@ export const GetId = async (req, res) => {
 
 export const Post = async (req, res) => {
     const data = req.body
-    const UserId = await Number.parseInt(req.params.id, 10);
+    const id = {
+        _id:req.params.id
+    }
     try{
-        const users = await postUser(data,UserId);
+        const users = await postUser(data,id);
         res.status(200).json(users);
     } catch(err){
         res.status(500).send(err)
@@ -34,13 +36,12 @@ export const Post = async (req, res) => {
   };
 
 export const Put = async (req, res) => {
-    // const id = req.params
-    // const id = req.params
-
     const data = req.body
-    const UserId = req.body.UserId
+    const id = {
+        _id:req.params.id
+    }
     try{
-        const users = await editUser(data,UserId);
+        const users = await editUser(data,id);
         res.status(200).json(users);
     } catch(err){
         res.status(500).send(err)
@@ -49,8 +50,11 @@ export const Put = async (req, res) => {
 
 export const Delete = async (req, res) => {
     const data = req.body
+    const id = {
+        _id:req.params.id
+    }
     try{
-        const users = await deleteUser(data);
+        const users = await deleteUser(data,id);
         res.status(200).json(users);
     } catch(err){
         res.status(500).send(err)

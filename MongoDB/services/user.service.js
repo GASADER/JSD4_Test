@@ -14,16 +14,16 @@ export async function getUserId(data, UserId) {
   return users;
 }
 
-export async function postUser(data, UserId) {
+export async function postUser(data,id) {
+
   const newData = await new User(data);
-  newData.UserId = UserId;
   return newData.save();
 }
 
 
-export async function editUser(data) {
+export async function editUser(data,id) {
   try {
-    const updatedUser = await User.findByIdAndUpdate(data._id, data, { new: true });
+    const updatedUser = await User.findByIdAndUpdate(id._id, data, { new: true });
     console.log(updatedUser)
     return updatedUser.save();
   } catch (err) {
@@ -32,9 +32,9 @@ export async function editUser(data) {
   }
 }
 
-export async function deleteUser(data) {
+export async function deleteUser(data,id) {
   try {
-    const updatedUser = await User.findByIdAndUpdate(data._id, data, { new: true });
+    const updatedUser = await User.findByIdAndUpdate(id._id, data, { new: true });
     updatedUser.post_status = false;
     console.log(updatedUser)
     return updatedUser.save();
