@@ -5,7 +5,8 @@
     "express-session": "^1.17.3",
     "mongodb": "^5.4.0",
     "mongoose": "^7.1.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
   },
   "type": "module",
   "name": "mongodb",

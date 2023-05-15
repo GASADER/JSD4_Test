@@ -11,11 +11,13 @@ const connectDb = async (req, res) => {
       await mongoose.connect(uri, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        dbName:'Gymmini',
       });
       console.log("Database connected.");
     } catch (err) {
       //ต่อไม่ให้ให้ออก
       console.error("connect db failed", err.message);
+      //ให้จบโปรแกรม
       process.exit(1);
     }
   };
